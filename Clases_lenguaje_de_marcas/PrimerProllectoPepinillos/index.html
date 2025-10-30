@@ -45,20 +45,125 @@
                 </tr>
             </tfoot>
     </table>
-<form action="">
-<p></p>
+<form id="contact-form">
+<fieldset>
+    <legend>Datos básicos</legend>
     <label>Nombre:
     <input type="text" placeholder="escribe aqui tu nombre" required>
     </label>
-   <p></p> 
+    <p></p>
     <label>Edad:
     <input min="0" max="100" step="0.1" type="number" placeholder = "escribe aqui tu edad">
     </label>
-<p></p>
+    <p></p>
     <label>Fecha de nacimiento:
     <input type="date" placeholder = "escribe aquí tu fecha">
     </label>
-</form>
+    <p></p>
+    <label>Email:
+    <input type="email" placeholder = "escribe aquí tu email">
+    </label>
+     <p></p>
+    <label>Telefono:
+    <input type="tel" placeholder = "escribe aquí tu telefono">
+    </label>
+    <p></p>
+    <label>Contraseña:
+    <input type="password" placeholder = "escribe aquí tu contraseña">
+    </label>
+    </fieldset>
+    <fieldset><!usado para crear campos
+        <legend>Fecha, hora y numeros</legend><!usado para dar el titulo
+         <label>Hora de inicio:
+    <input type="time" step="60">
+    </label>
+    <p></p>
+    <label>Cita:
+    <input type="datetime-local" >
+    </label>
+    <p></p>
+     <label>Mes:
+    <input type="month" >
+    </label>
+    <p></p>
+     <label>Semana:
+    <input type="week">
+    </label>
+    <p></p>
+     <label>Rango:
+    <input type="range" min="0" max="100" value="0" oninput="document.getElementById(`valorRango`).value=this.value">
+    </label>
+    <! para crear una barra de selecion progresiva
+
+    <output id="valorRango">0</output>
+    <p></p>
+     <label>Color favorit:
+    <input type="color" value="555555" >
+    </label>
+    <p></p>
+    </fieldset>
+    <fieldset>
+        <legend>Opciones y listas</legend>
+        <fieldset>
+         <input type="radio" name="tipoPepino" value="Moreno" checked>
+         <label>Moreno</label>
+         <input type="radio" name="tipoPepino" value="Kirby">
+         <label>Kirby</label>
+          <input type="radio" name="tipoPepino" value="rubio">
+         <label>Rubio</label>
+        </fieldset>
+
+    </fieldset>
+    <fieldset>
+        <legend>Extras</legend>
+        <input type="checkbox" name="extras de los pepinos"value=ketchup> 
+        <label>ketchup</label>
+         <input type="checkbox" name="extras de los pepinos"value=costilleta> 
+        <label>costilleta</label>
+         <input type="checkbox" name="extras de los pepinos"value=nocilla> 
+        <label>nocilla</label>
+
+    </fieldset>
+     <! uso tipico para seleccionar provincias de un país >
+    <label>Variedad</label>
+    <select name="s-variedad" id="s-variedad">
+            <option value="sinOpcion">------------</option>
+            <optgroup label="Clasicos">
+            <option value="Holandes">Holandes</option>
+            <option value="Espanol">Español</option>
+            </optgroup>
+            <optgroup label="Modernos">
+            <option value="Pelado">Pelado</option>
+            </optgroup>
+    </select>
+    <p></p><! lista para elegir mas de una opcion
+    <label >Lotes(Puedes elegir varios)</label>
+    <select name="lotes[]" id="s-Lotes" multiple size="4">
+        <option value="Lote 1">Lote 1</option>
+        <option value="Lote 2">Lote 2</option>
+        <option value="Lote 3">Lote 3</option>
+        <option value="Lote 4">Lote 4</option>
+        <option value="Lote 5">Lote 5</option>
+        <option value="Lote 6">Lote 6</option>
+
+    </select>
+<fieldset>
+    <legend>Texto y archivos</legend>
+    <label>Observaciones</label>
+    <textarea rows="10" cols="40" placeholder="Escribe aqui tus sugerencias"></textarea>/textarea>></textarea> 
+    <!para hacer un formulario de Texto
+    <!rows es para el numero de filas que va a tener el recuadro de texto y cols el numero de caracteres de cada una de las líneas
+    <!el placeholdersirve para poner el texto en gris del fondo
+    <!para quitar el ajuste del textarea lo haremos con css
+    <label>Adjuntar factura</label>
+    <input type="file" accept="pdf" multiple>
+    <!asi creamos un boton con label, despues con el type selecionamos que sea de tipo archivo y con accept que solo acepte pdf. Con multiple nos permite selecionar más de un archivo>
+    <label>Progresion</label>
+    <progress value="70" max="100"></progress><!esto lo hemos metido a machete se configura el value y el max con js
+    <!esta es una barra de progresion para indicar porejemplo la progresion 
+
+</fieldset>
 <button type="submit">Enviar</button>
+</form>
 </body>
 </html
