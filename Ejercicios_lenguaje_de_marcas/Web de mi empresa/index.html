@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chubasqueros de sol</title>
+</head>
+<body>
+    <h1>Chubasqueros de Sol</h1>
+    <h2>Chubasqueros para días soleados</h2>
+    <ul>
+    <h3>Chubasquero amarillo</h3>
+    <a href=http://www.godofredopesca.com/shop/chubasquero-amarillo-3-4-color-amarillo><img src="Chubasquero amarillo.jpg" alt="Chubasquero de color amarillo" width="200"title="Chubasquero amarillento"></a>
+    <h3>Chubasquero rojo</h3>
+    <a href="https://www.mprosports.com/chubasquero-jako-allround-rojo-hombre.html"><img src="Chubasquero rojo.jpg" alt="Chubasquero de color rojo" width="200" title="Chubasquero rojizo"></a>
+    </ul>
+    <h2>Chubasqueros para días muy soleados</h2>
+    <h3>Chubasquero verde</h3>
+    <a href="https://www.sersport.es/textil-textil-running-trailrunning/51813-chubasquero-mujer-r-city-iconic-verde-fluor.html?srsltid=AfmBOoqSeExxj99lzZsZt8Szz1C7zRjkrvPdabg6_NCoIiTfACIQcC9F"><img src="Chubasquero verde.jpg" alt="Chubasquero de color verde" width="200" title="Chuvasquero verdoso"></a>
+    <h3>Chubasquero azul</h3>
+    <a href="https://deportesmoya.es/chubasquero-the-north-face-quest-azul-hombre-138868.html"><img src="Chubasquero azul.jpg" alt="Chubasquero de color azul" width="200" title="Chuvasquero amarillento"></a>
+    <h2>Formulario de contacto para enviarte el chubasquero</h2>
+    <form id="contact-form">
+        <fieldset>
+        <legend>Datos básicos</legend>
+            <label for="Nombre">Nombre:
+                <input id="nombre" name="nombre" type="text" placeholder="Escribe aqui tu nombre" required>
+            </label>
+            <label for="Email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Escribe aqui tu email" required>
+            <label for="Telefono">Telefono</label>
+                <input id="Telefono" name="Telefono" type="tel" placeholder="Escribe aqui tu telefono" required>
+            <label for="Fecha">Fecha de recogida</label>
+                <input id="Fecha" name="Fecha" type="date"required>
+            </fieldset>
+        <fieldset>
+        <legend>Datos del peido</legend>
+            <input type="checkbox">
+                <label for="chubasquero">Amarillo</label>
+            <input type="checkbox">
+                <label for="chubasquero">Rojo</label>
+            <input type="checkbox">
+                <label for="chubasquero">Verde</label>
+            <input type="checkbox">
+                <label for="chubasquero">Azul</label>  
+            
+            <label for="Lote">Lotes de chubasqueros (elige varios)</label>
+            <select name="lotes[]" multiple size="5">
+                <optgroup>
+            <option value="lote-a">Lote Amarillo</option>
+            <option value="lote-b">Lote Rojo</option>
+            <option value="lote-c">Lote Verde</option>
+            <option value="lote-d">Lote Azul</option>
+                </optgroup>
+        </fieldset>
+        <fieldset>
+        <legend>Ruegos y preguntas señoria</legend>
+        <label for="Texto">Texto</label>
+        <textarea name="textarea1" id="textarea1" rows="5" cols="50" ></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
