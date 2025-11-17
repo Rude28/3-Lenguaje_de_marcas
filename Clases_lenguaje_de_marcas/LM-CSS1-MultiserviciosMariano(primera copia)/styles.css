@@ -1,0 +1,60 @@
+
+*{
+    background-color: palegoldenrod;
+}
+/*el asterisco nos da para todo el documetno*/
+html{
+    color: black;
+}
+/*html son las propiedades que se van a aplicar a todo el docuemtno, esta por debajod e asterisco*/
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+header{
+text-align: center;
+background-color: aqua;
+}
+header img{
+width: 200px;
+height: auto;
+border-radius: 10px;
+}
+/*aqui para meter directamente css metemos style y las etiquetas, en este caso el color y el tamaño de letra con font size
+despues en el header voy especcificando cosas como el color del fondo o la alineacion del texto
+al final ponemos que estas etiquetas sean solo para las imagenes que hay en el head 
+al meterlo en un arhivo a parte nos va a quedar para todas las páginas de html*/
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*aqui quitamos y volvemos a poner el subrrayado de los enlaces*/
+.logo{
+width: 160px;
+border-radius: 10;
+height: auto;
+}
+/*con el punto decimos que es una clase que hemos creado nosotros
+el tamaño es un zoom segun las limitaciones del navegador, pero no ocupa toda la página
+lo mejor es poner un tamaño relativo y no en px*/
+.content h2{
+    font-size: 1.6rem;
+    color: blue;
+    margin: 50px;
+}
+/*con los margin podemos dar margen a cada seccion 
+margin agrupoa a los cuatro,si ponemos olo margin 50 aplica a los cuatro, arriba abajo izquierda derecha
+si ponemos margin: 50px 50px 95px 30px y va de arriba derecha abajo izquierda, estilo como un reloj*/
+.btn{
+    padding: 8px;
+    border-radius: 8px;
+}
+.btn-enviar{
+    background-color: brown;
+}
+.btn-enviar:hover{
+    filter: brightness(2);
+}
