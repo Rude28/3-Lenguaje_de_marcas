@@ -1,91 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallumbos Ciruelo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-    <h1>Gallumbos ciruelo</h1>
-    <img class= "logo"src="Logo principal.jpg" alt="logo principal de Gallumbos Ciruelo" >
-    <p>Lo primero que te pones. Lo último que olvidas.</p>
-</header>
-<nav class="navegador">
-    <ul>
-        <li>Inicio</li>
-        <li>Productos</li>
-        <li>Coleción</li>
-        <li>Contacto</li>
-        <li>Sobre nosotros</li>
-    </ul>
-</nav>
-<main>
-    <section class="informacion">
-    <h2>Sobre Gallumbos Ciruelo</h2>
-    <h3>Qué tipo de marca es</h3>
-    <p>Gallumbos Ciruelo hace ropa interior masculina con carácter. Cómoda, resistente y sin tonterías.</p>
-    <h3>A qué público va dirigida</h3>
-    <p>Para hombres que quieren ir bien sujetos, cómodos y con sentido del humor.</p>
-    <h3>Qué nos diferencia de otras marcas</h3>
-    <p>Porque mientras otros prometen postureo, aquí abajo mandamos nosotros.</p>
-    </section>
-    <section class="productos">
-        <h2>Productos</h2><!--Aqui vamos a poner una tabla para meter los productos-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-izquierda">
+        <figure>
+          <img
+            class="logo"
+            src="logo-principal.jpg"
+            alt="logo principal de Gallumbos Ciruelo"
+          />
+        </figure>
+      </div>
+      <div class="header-centro">
+        <h1>Gallumbos Ciruelo</h1>
+        <p>Lo primero que te pones. Lo último que olvidas.</p>
+      </div>
+      <div class="header-derecha"></div>
+    </header>
+    <nav id="inicio" class="navegador">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="sobre-nosotros" class="presentacion">
+        <h2>Sobre Gallumbos Ciruelo</h2>
         <div>
+          <h3>Qué tipo de marca es</h3>
+          <p>
+            <strong>Gallumbos Ciruelo</strong> hace ropa interior masculina con
+            carácter. Cómoda, resistente y sin tonterías.
+          </p>
+        </div>
+        <div>
+          <h3>A qué público va dirigida</h3>
+          <p>
+            Para hombres que quieren ir bien sujetos, cómodos y con sentido del
+            humor.
+          </p>
+        </div>
+        <div>
+          <h3>Qué nos diferencia de otras marcas</h3>
+          <p>
+            Porque mientras otros prometen postureo, aquí abajo mandamos
+            nosotros.
+          </p>
+        </div>
+      </section>
+      <section id="productos" class="tipos-producto">
+        <h2>Productos</h2>
+        <div>
+          <article class="producto">
             <h3>Gallumbo 1</h3>
-            <img src="" alt="">
-            <p>Gallumbo de ligon</p>
+            <figure>
+              <img
+                src="gallumbo1.png"
+                alt="imagen del gallumbo1 modelo clasico"
+              />
+              <figcaption>Gallumbo clásico</figcaption>
+            </figure>
             <p>500 rupias</p>
-        </div>
-        <div>
+          </article>
+          <article class="producto">
             <h3>Gallumbo 2</h3>
-            <img src="" alt="">
-            <p>Gallumbo de ligon</p>
+            <figure>
+              <img
+                src="gallumbo2.png"
+                alt="imagen del gallumbo2 modelo lujoso"
+              />
+              <figcaption>Gallumbo lujoso</figcaption>
+            </figure>
             <p>500 rupias</p>
-        </div>
-        <div>
+          </article>
+          <article class="producto">
             <h3>Gallumbo 3</h3>
-            <img src="" alt="">
-            <p>Gallumbo de ligon</p>
+            <figure>
+              <img
+                src="gallumbo3.png"
+                alt="imagen del gallumbo3 modelo empotrador"
+              />
+              <figcaption>Gallumbo de empotrador</figcaption>
+            </figure>
             <p>500 rupias</p>
-        </div>
-        <div>
+          </article>
+          <article class="producto">
             <h3>Gallumbo 4</h3>
-            <img src="" alt="">
-            <p>Gallumbo de ligon</p>
+            <figure>
+              <img
+                src="gallumbo4.png"
+                alt="imagen del gallumbo4 modelo guayabin"
+              />
+              <figcaption>Gallumbo guayabin</figcaption>
+            </figure>
+            <p>Gallumbo de guayabin</p>
             <p>500 rupias</p>
+          </article>
         </div>
-    </section>
-    <section class="colección">
-        <h2>Colección</h2><!--Aqui hay que hacer una caja-->
+      </section>
+      <section id="coleccion" class="diferencia">
+        <h2>Colección</h2>
         <div>
-        <p>Algodon 100% anti rozaduras de ciruelo</p>
-        <p>Tejido especial para que no se le enfrie el ciruelin</p>
-        <p>Ahora con aun más espacio para su ciruelo</p>
+          <p>Algodón 100% anti rozaduras de ciruelo</p>
+          <p>Tejido especial para que no se le enfrie el ciruelin</p>
+          <p>Ahora con aún más espacio para su ciruelo</p>
         </div>
-    </section>
-    <section class="formulario">
-        <h2>Contacto</h2><!--Aqui vamos a poner un formulario de contacto -->
-       <p>Para contactar con nosotros escriba aqui sus credenciales</p>
-        <input type="text" placeholder="Escribe aqui tu nombre">
-        <input type="email" placeholder="Escribe aquí tu email">
-        <label for="opciones">Eliga una de las siguientes opciones:</label>
-        <select name="opciones" id="">
-            <option value="">El ciruelo se me queda naranja</option>
-            <option value="">El ciruelo se me queda rojo</option>
-            <option value="">El ciruelo se me queda amarillo</option>
-            <option value="">El ciruelo se me queda azul</option>
-            <option value="">El ciruelo se me queda verdde</option>
-        </select>      
-        <input type="text" placeholder="Escriba qui su mensajito">
-        <input type="button" value="Enviar">
-    </section>
-</main>
-<footer>
-   <p>© 2025 Gallumbos Ciruelo</p>
-<a href="#legal">Legal</a> 
-</footer>
-</body>
+      </section>
+      <section id="contacto" class="escribenos">
+        <div>
+          <h2>Contacto</h2>
+          <p>Para contactar con nosotros escriba aqui sus credenciales</p>
+        </div>
+        <form action="#" method="post">
+          <div class="partesFormulario">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Escribe aqui tu nombre"
+            />
+          </div>
+          <div class="partesFormulario">
+            <label for="correo">Email</label>
+            <input
+              id="correo"
+              type="email"
+              name="correo"
+              placeholder="Escribe aquí tu email"
+            />
+          </div>
+          <div class="partesFormulario">
+            <label for="opciones">Elige una de los siguientes problemas al ponerse los gallumbos:</label>
+            <select name="opciones" id="opciones">
+              <option value="naranja">El ciruelo se me queda naranja</option>
+              <option value="rojo">El ciruelo se me queda rojo</option>
+              <option value="amarillo">El ciruelo se me queda amarillo</option>
+              <option value="azul">El ciruelo se me queda azul</option>
+              <option value="verde">El ciruelo se me queda verde</option>
+            </select>
+          </div>
+          <div class="partesFormulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+          </div>
+          <div class="partesFormulario">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="final">
+      <p>© 2026 Gallumbos Ciruelo</p>
+      <a href="#legal">Legal: todos los derechos reservados a mi ciurelo, situacion fiscal de la empresa en las islas pepino.</a>
+    </footer>
+  </body>
 </html>
